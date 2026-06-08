@@ -9,171 +9,179 @@
 
 <style>
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
 body{
-    background:#0f172a;
-    color:white;
+background:#0f172a;
+color:white;
+overflow-x:hidden;
 }
 
 .hero{
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    background:
-    radial-gradient(circle at top,#22c55e 0%,transparent 40%),
-    linear-gradient(135deg,#0f172a,#1e293b);
-    overflow:hidden;
-    position:relative;
-}
-
-.hero::before{
-    content:"";
-    position:absolute;
-    width:600px;
-    height:600px;
-    background:#22c55e33;
-    border-radius:50%;
-    filter:blur(120px);
-    animation:float 6s infinite alternate;
-}
-
-@keyframes float{
-    from{transform:translateY(-50px);}
-    to{transform:translateY(50px);}
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+background:
+radial-gradient(circle at top,#22c55e 0%,transparent 40%),
+linear-gradient(135deg,#0f172a,#1e293b);
 }
 
 .hero-content{
-    z-index:2;
-    max-width:800px;
-    padding:20px;
+max-width:800px;
+padding:20px;
 }
 
 .hero h1{
-    font-size:5rem;
-    margin-bottom:20px;
-    background:linear-gradient(90deg,#22c55e,#84cc16,#facc15);
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent;
+font-size:5rem;
+background:linear-gradient(90deg,#22c55e,#84cc16,#facc15);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+margin-bottom:20px;
 }
 
 .hero p{
-    font-size:1.3rem;
-    color:#cbd5e1;
+font-size:1.2rem;
+color:#cbd5e1;
 }
 
 .btn{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 35px;
-    background:#22c55e;
-    color:white;
-    text-decoration:none;
-    border-radius:50px;
-    font-weight:600;
-    transition:.3s;
+display:inline-block;
+margin-top:25px;
+padding:15px 35px;
+background:#22c55e;
+color:white;
+text-decoration:none;
+border-radius:50px;
+font-weight:600;
+transition:.3s;
 }
 
 .btn:hover{
-    transform:scale(1.1);
-    background:#16a34a;
+transform:scale(1.05);
 }
 
 section{
-    padding:100px 10%;
+padding:90px 10%;
 }
 
 .titulo{
-    text-align:center;
-    font-size:2.5rem;
-    margin-bottom:60px;
+text-align:center;
+font-size:2.5rem;
+margin-bottom:50px;
 }
 
 .cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
 }
 
 .card{
-    background:rgba(255,255,255,.05);
-    backdrop-filter:blur(10px);
-    border:1px solid rgba(255,255,255,.1);
-    border-radius:20px;
-    padding:30px;
-    transition:.4s;
+background:rgba(255,255,255,.05);
+backdrop-filter:blur(10px);
+border:1px solid rgba(255,255,255,.1);
+padding:30px;
+border-radius:20px;
+transition:.3s;
 }
 
 .card:hover{
-    transform:translateY(-10px);
-    border-color:#22c55e;
-    box-shadow:0 0 25px #22c55e55;
+transform:translateY(-10px);
+box-shadow:0 0 25px #22c55e55;
 }
 
 .card h3{
-    margin-bottom:15px;
-    color:#4ade80;
+margin-bottom:15px;
+color:#4ade80;
 }
 
 .timeline{
-    position:relative;
-    max-width:900px;
-    margin:auto;
+max-width:900px;
+margin:auto;
 }
 
 .linha{
-    background:#1e293b;
-    padding:25px;
-    border-left:5px solid #22c55e;
-    margin:20px 0;
-    border-radius:10px;
+background:#1e293b;
+padding:20px;
+border-left:5px solid #22c55e;
+margin:20px 0;
+border-radius:10px;
 }
 
 .galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .img{
-    height:220px;
-    border-radius:15px;
-    overflow:hidden;
+overflow:hidden;
+border-radius:15px;
+height:220px;
 }
 
 .img img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.4s;
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.4s;
 }
 
 .img:hover img{
-    transform:scale(1.1);
+transform:scale(1.1);
+}
+
+.quiz{
+max-width:700px;
+margin:auto;
+text-align:center;
+}
+
+.quiz button{
+margin:10px;
+padding:12px 25px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+font-weight:bold;
+background:#22c55e;
+color:white;
+}
+
+#resultado{
+margin-top:20px;
+font-size:1.3rem;
+font-weight:bold;
 }
 
 .contador{
-    text-align:center;
-    font-size:5rem;
-    color:#4ade80;
-    font-weight:bold;
+font-size:5rem;
+text-align:center;
+color:#4ade80;
+font-weight:bold;
 }
 
 footer{
-    text-align:center;
-    padding:40px;
-    background:#020617;
-    color:#94a3b8;
+background:#020617;
+text-align:center;
+padding:40px;
+color:#94a3b8;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:3rem;
+}
 }
 </style>
 </head>
@@ -181,118 +189,167 @@ footer{
 <body>
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>AGRINHO 2026</h1>
-        <p>
-            O futuro nasce da união entre tecnologia,
-            sustentabilidade e educação.
-        </p>
 
-        <a href="#projeto" class="btn">
-            Conhecer Projeto
-        </a>
-    </div>
+<div class="hero-content">
+<h1 id="titulo"></h1>
+
+<p>
+Tecnologia, sustentabilidade e educação
+transformando o campo e conectando pessoas.
+</p>
+
+<a href="#sobre" class="btn">
+Explorar Projeto
+</a>
+</div>
+
 </section>
 
-<section id="projeto">
-    <h2 class="titulo">🌱 Campo e Cidade Juntos</h2>
+<section id="sobre">
 
-    <div class="cards">
+<h2 class="titulo">🌱 Campo e Cidade</h2>
 
-        <div class="card">
-            <h3>🚜 Agricultura Inteligente</h3>
-            <p>
-                Máquinas modernas e sensores aumentam a produtividade
-                sem prejudicar o meio ambiente.
-            </p>
-        </div>
+<div class="cards">
 
-        <div class="card">
-            <h3>🌎 Sustentabilidade</h3>
-            <p>
-                Produzir alimentos preservando a natureza é um desafio
-                que todos devemos enfrentar.
-            </p>
-        </div>
+<div class="card">
+<h3>🚜 Agricultura Inteligente</h3>
+<p>Máquinas modernas aumentam a produtividade e reduzem desperdícios.</p>
+</div>
 
-        <div class="card">
-            <h3>💡 Inovação</h3>
-            <p>
-                Novas tecnologias transformam o campo e melhoram a
-                qualidade de vida das pessoas.
-            </p>
-        </div>
+<div class="card">
+<h3>🌎 Sustentabilidade</h3>
+<p>Produção responsável para preservar os recursos naturais.</p>
+</div>
 
-    </div>
+<div class="card">
+<h3>💡 Inovação</h3>
+<p>Novas tecnologias melhoram a qualidade de vida no campo.</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-    <h2 class="titulo">📈 Evolução do Campo</h2>
 
-    <div class="timeline">
-        <div class="linha">
-            🌾 Agricultura tradicional
-        </div>
+<h2 class="titulo">📈 Evolução da Agricultura</h2>
 
-        <div class="linha">
-            📡 Uso de satélites e drones
-        </div>
+<div class="timeline">
 
-        <div class="linha">
-            🤖 Inteligência artificial
-        </div>
+<div class="linha">🌾 Agricultura Tradicional</div>
+<div class="linha">🚜 Mecanização</div>
+<div class="linha">📡 Drones e Satélites</div>
+<div class="linha">🤖 Inteligência Artificial</div>
+<div class="linha">🚀 Agricultura do Futuro</div>
 
-        <div class="linha">
-            🚀 Agricultura do futuro
-        </div>
-    </div>
+</div>
+
 </section>
 
 <section>
-    <h2 class="titulo">📷 Galeria</h2>
 
-    <div class="galeria">
+<h2 class="titulo">📷 Galeria</h2>
 
-        <div class="img">
-            <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800" alt="">
-        </div>
+<div class="galeria">
 
-        <div class="img">
-            <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800" alt="">
-        </div>
+<div class="img">
+<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?w=800">
+</div>
 
-        <div class="img">
-            <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800" alt="">
-        </div>
+<div class="img">
+<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?w=800">
+</div>
 
-    </div>
+<div class="img">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?w=800">
+</div>
+
+</div>
+
 </section>
 
 <section>
-    <h2 class="titulo">🌳 Compromisso com o Futuro</h2>
 
-    <div class="contador" id="contador">0%</div>
+<h2 class="titulo">🧠 Quiz Agrinho</h2>
+
+<div class="quiz">
+
+<p>Qual tecnologia é usada para monitorar lavouras pelo céu?</p>
+
+<button onclick="resposta(true)">
+📡 Drone
+</button>
+
+<button onclick="resposta(false)">
+⌨ Máquina de Escrever
+</button>
+
+<p id="resultado"></p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="titulo">🌳 Compromisso com o Futuro</h2>
+
+<div class="contador" id="contador">
+0%
+</div>
+
 </section>
 
 <footer>
-    AGRINHO 2026 • O Futuro Nasce no Campo
+AGRINHO 2026 • O Futuro Nasce no Campo
 </footer>
 
 <script>
+
+const texto = "AGRINHO 2026";
+let i = 0;
+
+function escrever(){
+if(i < texto.length){
+document.getElementById("titulo").innerHTML += texto.charAt(i);
+i++;
+setTimeout(escrever,120);
+}
+}
+
+escrever();
+
+function resposta(certa){
+
+const resultado =
+document.getElementById("resultado");
+
+if(certa){
+resultado.innerHTML = "✅ Correto! Os drones ajudam a monitorar plantações.";
+resultado.style.color = "#4ade80";
+}
+else{
+resultado.innerHTML = "❌ Resposta incorreta.";
+resultado.style.color = "#ff6b6b";
+}
+
+}
+
 let valor = 0;
 
 const contador = setInterval(() => {
 
-    valor++;
+valor++;
 
-    document.getElementById("contador").innerHTML =
-    valor + "%";
+document.getElementById("contador").innerHTML =
+valor + "%";
 
-    if(valor >= 100){
-        clearInterval(contador);
-    }
+if(valor >= 100){
+clearInterval(contador);
+}
 
 },20);
+
 </script>
 
 </body>

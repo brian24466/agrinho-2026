@@ -3,198 +3,83 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agrinho 2026 - Campo e Cidade Conectados</title>
+<title>Agrinho 2026</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family: Arial, sans-serif;
-}
-
 body{
-    background:#f4fff4;
-    color:#333;
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:#f0fff0;
 }
 
 header{
-    background:linear-gradient(135deg,#2e8b57,#4caf50);
+    background:#2e8b57;
     color:white;
     text-align:center;
-    padding:80px 20px;
-}
-
-header h1{
-    font-size:3rem;
-    margin-bottom:15px;
-}
-
-header p{
-    font-size:1.2rem;
-}
-
-nav{
-    background:#1f6d3c;
-    padding:15px;
-    text-align:center;
-}
-
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
+    padding:50px;
 }
 
 section{
-    padding:60px 10%;
-}
-
-.card-container{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:20px;
+    padding:20px;
 }
 
 .card{
     background:white;
-    padding:25px;
-    border-radius:15px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-.card h3{
-    color:#2e8b57;
-    margin-bottom:10px;
-}
-
-.banner{
-    background:url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854?auto=format&fit=crop&w=1400&q=80');
-    background-size:cover;
-    background-position:center;
-    height:400px;
-    border-radius:20px;
-    margin-top:30px;
+    margin:15px 0;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
 }
 
 footer{
-    background:#1f6d3c;
+    background:#2e8b57;
     color:white;
     text-align:center;
-    padding:20px;
-}
-
-.btn{
-    display:inline-block;
+    padding:15px;
     margin-top:20px;
-    background:#fff;
-    color:#2e8b57;
-    padding:12px 25px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.btn:hover{
-    background:#dff5df;
-}
-
-@media(max-width:768px){
-    header h1{
-        font-size:2rem;
-    }
 }
 </style>
 </head>
-
 <body>
 
 <header>
     <h1>AGRINHO 2026</h1>
-    <p>Campo e Cidade Conectados para um Futuro Sustentável</p>
-    <a href="#sobre" class="btn">Saiba Mais</a>
+    <p>Campo e Cidade Construindo o Futuro</p>
 </header>
 
-<nav>
-    <a href="#sobre">Sobre</a>
-    <a href="#tecnologia">Tecnologia</a>
-    <a href="#sustentabilidade">Sustentabilidade</a>
-    <a href="#futuro">Futuro</a>
-</nav>
-
-<section id="sobre">
-    <h2>Sobre o Projeto</h2>
-    <p style="margin-top:15px;">
-        O Agrinho incentiva a educação, a cidadania e a valorização do campo.
-        Em 2026, destacamos a importância da união entre tecnologia,
-        sustentabilidade e produção agrícola para garantir qualidade de vida
-        para toda a sociedade.
-    </p>
-
-    <div class="banner"></div>
-</section>
-
-<section id="tecnologia">
-    <h2>Tecnologia no Campo</h2>
-
-    <div class="card-container" style="margin-top:30px;">
-        <div class="card">
-            <h3>🚜 Máquinas Inteligentes</h3>
-            <p>Equipamentos modernos aumentam a produtividade e reduzem desperdícios.</p>
-        </div>
-
-        <div class="card">
-            <h3>📡 Monitoramento</h3>
-            <p>Sensores e satélites ajudam a acompanhar as plantações em tempo real.</p>
-        </div>
-
-        <div class="card">
-            <h3>🤖 Agricultura Digital</h3>
-            <p>Dados e inteligência artificial auxiliam nas decisões do produtor.</p>
-        </div>
+<section>
+    <div class="card">
+        <h2>🌱 Sustentabilidade</h2>
+        <p>O cuidado com a natureza garante recursos para as próximas gerações.</p>
     </div>
-</section>
 
-<section id="sustentabilidade">
-    <h2>Sustentabilidade</h2>
-
-    <div class="card-container" style="margin-top:30px;">
-        <div class="card">
-            <h3>🌱 Preservação Ambiental</h3>
-            <p>Produzir alimentos respeitando a natureza é essencial para o futuro.</p>
-        </div>
-
-        <div class="card">
-            <h3>💧 Uso Consciente da Água</h3>
-            <p>Técnicas modernas ajudam a economizar recursos naturais.</p>
-        </div>
-
-        <div class="card">
-            <h3>♻️ Energia Renovável</h3>
-            <p>Painéis solares e outras fontes limpas fortalecem a sustentabilidade.</p>
-        </div>
+    <div class="card">
+        <h2>🚜 Tecnologia no Campo</h2>
+        <p>Máquinas modernas e inovação ajudam a aumentar a produção agrícola.</p>
     </div>
-</section>
 
-<section id="futuro">
-    <h2>O Futuro do Campo</h2>
+    <div class="card">
+        <h2>🤝 União entre Campo e Cidade</h2>
+        <p>O trabalho no campo abastece as cidades e fortalece a economia.</p>
+    </div>
 
-    <p style="margin-top:20px;">
-        O desenvolvimento sustentável depende da colaboração entre produtores,
-        estudantes, pesquisadores e toda a comunidade. Juntos podemos construir
-        um futuro mais verde, tecnológico e inclusivo.
-    </p>
+    <button onclick="mostrarMensagem()">
+        Clique Aqui
+    </button>
+
+    <p id="mensagem"></p>
 </section>
 
 <footer>
-    <p>Projeto Agrinho 2026 | Desenvolvido para fins educacionais</p>
+    Projeto Agrinho 2026
 </footer>
+
+<script>
+function mostrarMensagem(){
+    document.getElementById("mensagem").innerHTML =
+    "Juntos construímos um futuro mais sustentável!";
+}
+</script>
 
 </body>
 </html>
